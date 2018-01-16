@@ -141,10 +141,15 @@ public class MainActivity extends AppCompatActivity implements OnWebServiceResul
             adapter.setOnClickListener(new MovieListAdapter.OnItemClickListener() {
                 @Override
                 public void onItemClick(View view, int position) {
+                    Toast.makeText(MainActivity.this, "Selected Position : " + String.valueOf(moviesListList.get(position).getID())  , Toast.LENGTH_SHORT).show();
                     if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
                         ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(MainActivity.this);
                     }
-                    startActivity(new Intent(MainActivity.this, MovieDetails.class));
+                    Intent movieDetailsIntent = new Intent(MainActivity.this, MovieDetails.class);
+                    Bundle movieInfoBundle = new Bundle();
+                    movieInfoBundle.putString(String.valueOf(moviesListList.get(position).getID()),"selectedMovieID");
+                    movieDetailsIntent.putExtra("selectedMovieID",String.valueOf(moviesListList.get(position).getID()));
+                    startActivity(movieDetailsIntent);
 
                 }
             });

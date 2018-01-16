@@ -3,8 +3,10 @@ package Network;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.sivaram.imdb.MainActivity;
+import com.sivaram.imdb.MovieDetails;
 import com.squareup.okhttp.FormEncodingBuilder;
 import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
@@ -53,6 +55,15 @@ public class CallWebService extends AsyncTask<String, Void, String> {
         this.Servicetype = Servicetype;
     }
 
+    // Constructor to initialize the required objects.
+    public CallWebService(Context context, String url, FormEncodingBuilder formBody, CommonUtilities.SERVICE_TYPE Servicetype, MainActivity onWebServiceResultListenerMainActivity, MovieDetails onWebServiceResultListener) {
+        this.context = context;
+        this.formBody = formBody;
+        this.url = url;
+        this.onWebServiceResultListener = onWebServiceResultListener;
+        this.Servicetype = Servicetype;
+    }
+
     //
     @Override
     protected void onPreExecute() {
@@ -91,6 +102,7 @@ public class CallWebService extends AsyncTask<String, Void, String> {
 
             }
             result = response.body().string(); // return response body
+            Toast.makeText(context, result, Toast.LENGTH_SHORT).show();
         } catch (Exception ex) {
             ex.printStackTrace();
         }

@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
-import android.widget.Toast;
+
 import com.bumptech.glide.*;
 
 import com.sivaram.imdb.R;
@@ -71,7 +71,7 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.View
             itemView.setOnClickListener(this);
 
             movieTitle = (TextView)itemView.findViewById(R.id.movieTitleTextView);
-            movieDescription = (TextView)itemView.findViewById(R.id.movieDescriptionTextView);
+            movieDescription = (TextView)itemView.findViewById(R.id.detailsDescriptionTextView);
             movieRatingBar = (RatingBar)itemView.findViewById(R.id.movieRatingBar);
             moviePoster = (ImageView)itemView.findViewById(R.id.moviePosterImageView);
         }

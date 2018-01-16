@@ -39,7 +39,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/movieDescriptionTextView"
+                android:id="@+id/detailsDescriptionTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/movieTitleTextView"
@@ -51,7 +51,7 @@
                 android:id="@+id/popularityTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/movieDescriptionTextView"
+                android:layout_below="@+id/detailsDescriptionTextView"
                 android:layout_toEndOf="@+id/moviePosterImageView"
                 android:layout_toRightOf="@+id/moviePosterImageView"
                 android:text="@string/popularity" />
