@@ -20,7 +20,9 @@ IMDB App
 ![](https://github.com/sivaramgollapudi/IMDB/blob/master/IMDB_App_Movie_Details.png)
 
 <h4> 5. My Favorites </h4>
+
 ![](https://github.com/sivaramgollapudi/IMDB/blob/master/IMDB_App_MyFavorites.png)
 
-<h4> 5. My WatchList </h4>
+<h4> 6. My WatchList </h4>
+
 ![](https://github.com/sivaramgollapudi/IMDB/blob/master/IMDB_App_MyWatchList.png)
