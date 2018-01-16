@@ -26,3 +26,7 @@ IMDB App
 <h4> 6. My WatchList </h4>
 
 ![](https://github.com/sivaramgollapudi/IMDB/blob/master/IMDB_App_MyWatchList.png)
+
+<h4> 6. Most Popular Movies </h4>
+
+![](https://github.com/sivaramgollapudi/IMDB/blob/master/IMDB_App_MyWatchList.png)

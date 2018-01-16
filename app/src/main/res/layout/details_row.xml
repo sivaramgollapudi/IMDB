@@ -38,7 +38,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/detailsTitleTextView" />
+        android:layout_below="@+id/detailsTitleTextView"
+        android:max="10" />
 
     <TextView
         android:id="@+id/detailsDescriptionTextView"
@@ -64,17 +65,18 @@
         android:id="@+id/detailsBudgetTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/detailsRatingBar"
-        android:layout_alignStart="@+id/detailsRatingBar"
+        android:layout_alignLeft="@+id/detailsPosterImageView"
+        android:layout_alignStart="@+id/detailsPosterImageView"
         android:layout_below="@+id/detailsPosterImageView"
+        android:layout_marginTop="11dp"
         android:text="TextView" />
 
     <TextView
         android:id="@+id/detailsRevenueTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/detailsReleaseDateTextView"
-        android:layout_alignStart="@+id/detailsReleaseDateTextView"
+        android:layout_alignLeft="@+id/detailsDescrTextView"
+        android:layout_alignStart="@+id/detailsDescrTextView"
         android:layout_below="@+id/detailsBudgetTextView"
         android:layout_marginTop="13dp"
         android:text="TextView" />

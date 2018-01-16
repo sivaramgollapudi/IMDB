@@ -50,6 +50,7 @@ public class MovieDetailsAdapter extends RecyclerView.Adapter<MovieDetailsAdapte
         holder.movieReleaseDate.setText(movieDetailsList.get(position).getReleaseDate());
         holder.movieRevenue.setText("Revenue : " + String.valueOf(movieDetailsList.get(position).getRevenue()));
         holder.movieBudget.setText("Budget : " + String.valueOf(movieDetailsList.get(position).getBudget()));
+        holder.movieRatingBar.setRating(Float.parseFloat(movieDetailsList.get(position).getMovieRating()));
 
         ImageView imageView = holder.moviePoster;
         Glide.with(context).load("http://image.tmdb.org/t/p/w500" + movieDetailsList.get(position).getPosterPath()).into(imageView);

@@ -101,6 +101,7 @@ public class MovieDetails extends AppCompatActivity implements OnWebServiceResul
             double budget = (obj.get("budget")== null ? 0.00 : obj.getDouble("budget"));
             String status = (obj.get("status")== null ? "" : obj.getString("status"));
             double revenue = (obj.get("revenue")== null ? 0.00 : obj.getDouble("revenue"));
+
             // Create Object of Movie Details
             Model.MovieDetails detailsRow = new Model.MovieDetails(obj.getString("title"),
                     String.valueOf(obj.getDouble("vote_average")),
